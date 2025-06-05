@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wagholi Hotels and Menu</title>
+</head>
+<body>
+
+    <h1>Popular Hotels in Wagholi</h1>
+    <ul>
+        <li>Hotel Green Leaf</li>
+        <li>Spice Garden</li>
+        <li>The Tandoori Palace</li>
+        <li>Urban Thali</li>
+        <li>Flavours of India</li>
+    </ul>
+    ============================================================
+    <h2>Menu Card Items</h2>
+    <table border="1">
+        <tr>
+            <th>Hotel Name</th>
+            <th>Popular Dish</th>
+            <th>Price </th>
+        </tr>
+        <tr>
+            <td>Hotel Green Leaf</td>
+            <td>Paneer Butter Masala</td>
+            <td>220</td>
+        </tr>
+        <tr>
+            <td>Spice Garden</td>
+            <td>Chicken Biryani</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>The Tandoori Palace</td>
+            <td>Tandoori Chicken</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Urban Thali</td>
+            <td>Special Veg Thali</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <td>Flavours of India</td>
+            <td>Butter Naan & Kadhai Paneer</td>
+            <td>260</td>
+        </tr>
+    </table>
+    ============================================================
+    <h2>Order Form</h2>
+    <form>
+        <label>Your Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Select Hotel:</label><br>
+        <select name="hotel" required>
+            <option value="">select a Hotel</option>
+            <option value="Green Leaf">Hotel Green Leaf</option>
+            <option value="Spice Garden">Spice Garden</option>
+            <option value="Tandoori Palace">The Tandoori Palace</option>
+            <option value="Urban Thali">Urban Thali</option>
+            <option value="Flavours of India">Flavours of India</option>
+        </select><br><br>
+
+        <label>Dish Name:</label><br>
+        <input type="text" name="dish" required><br><br>
+
+        <label>Quantity:</label><br>
+        <input type="number" name="quantity" min="1" max="10" required><br><br>
+
+        <label>Reservation Date (optional):</label><br>
+        <input type="date" name="date"><br><br>
+
+        <label for="message">Add a cooking request(optional):</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <label>Requirement:</label>
+        <br>
+        <input type="radio" id="extra masala" name="Requirement" value="extra masala">
+        <label for="extra masala">extra masala</label>
+        <br>
+        <input type="radio" id="less spicy" name="Requirement" value="less spicy">
+        <label for="less spicy">less spicy</label>
+        <br>
+        <input type="radio" id="non spicy" name="Requirement" value="non spicy">
+        <label for="non spicy">non spicy</label>
+        <br><br>
+
+
+        <input type="submit" value="Submit Order ">
+        
+        
+    </form>
+
+</body>
+</html>
